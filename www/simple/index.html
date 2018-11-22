@@ -5,7 +5,7 @@
   <script>
     Waziup.ApiClient.instance.basePath = 'https://api.waziup.io/api/v1'
     var api = new Waziup.SensorsApi()
-    api.getMeasurement("waziup", "ISPACE_Sensor16", "TC").then((meas) =>{
+    api.getMeasurement("waziup", "TheMakerSpace-DURBAN-WAZICAMP_Sensor16_3cff73b6d85360a80799121b6531220f", "TC").then((meas) =>{
       document.getElementById("sensor_value").innerHTML = "The temperature is: " + meas.last_value + "C";
     })
   </script>
